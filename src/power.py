@@ -4,11 +4,11 @@ from scipy.stats import norm
 
 @dataclass
 class PowerParams:
-baseline: float  # baseline conversion rate
-mde: float 
-alpha: float = 0.05
-power: float = 0.8
-two_tailed: bool = True
+    baseline: float  # baseline conversion rate
+    mde: float 
+    alpha: float = 0.05
+    power: float = 0.8
+    two_tailed: bool = True
 
 def sample_size_proportions(params: PowerParams) -> int:
     p1 = params.baseline
