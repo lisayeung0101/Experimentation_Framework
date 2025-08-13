@@ -5,6 +5,6 @@ def cuped_adjust(y, theta):
     var = np.var(theta, ddof=1)
     if var == 0:
         return y, 0.0
-    c = cov / var
+    c = cov / var  # compute constant c
     y_adj = y - c * theta 
     return y_adj, c
