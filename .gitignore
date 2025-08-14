@@ -1,0 +1,62 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Python caches and build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.dist/
+.build/
+.mypy_cache/
+.pytype/
+.pytest_cache/
+.cache/
+
+# Jupyter
+.ipynb_checkpoints/
+.jupyter/
+*.bak
+*.orig
+
+# dbt artifacts
+dbt_project/target/
+dbt_project/logs/
+dbt_packages/  # if you use dbt deps
+dbt_modules/   # legacy
+
+# Databases
+*.duckdb
+*.duckdb.wal
+*.db
+*.sqlite
+
+# Seeds and outputs (keep CSV seeds tracked, ignore generated temp files)
+*.tmp
+*.temp
+
+# Reports and exports
+artifacts/
+reports/
+exports/
+
+# Environment and secrets
+.env
+.env.*
+*.key
+*.pem
+
+# OS trash
+.Trashes
+ehthumbs.db
