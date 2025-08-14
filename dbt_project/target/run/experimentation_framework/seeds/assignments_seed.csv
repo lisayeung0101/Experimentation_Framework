@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "local"."analytics_analytics"."assignments_seed" (user_id text,experiment_id text,variant text,assigned_at timestamp without time zone)
+  ;
+    -- dbt seed --
+    
+          COPY "local"."analytics_analytics"."assignments_seed" FROM '/Users/hoiyingyeung/Experimentation_Framework/dbt_project/seeds/assignments_seed.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  
